@@ -1,0 +1,11 @@
+# Python 字节码文件（编译后的.pyc/.pyo等）
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# .key 文件夹下的所有pem密钥文件
+/.key/*.pem
+
+# 数据库
+*.db
