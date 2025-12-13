@@ -1,0 +1,14 @@
+# openssl 的安装需要使用 conda
+#   1. conda install -c conda-forge openssl
+#   2. 访问网址 https://raw.githubusercontent.com/openssl/openssl/master/apps/openssl.cnf
+#   3. 另存为 openssl.cnf
+#   4. 将 openssl.cnf 放入本项目的 .key 目录下
+#   5. 在创建证书时加上 -config "./.key/openssl.cnf"
+
+fastapi
+uvicorn
+sqlalchemy
+passlib
+pydantic[email]
+python-jose
+pydantic
