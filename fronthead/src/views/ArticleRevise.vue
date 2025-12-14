@@ -290,8 +290,8 @@ const submitCategory = async () => {
       isSuccessToastShow.value = false
     }, 3000)
     // 重置分类表单
-    categoryId.value = ''
-    categoryName.value = ''
+    // categoryId.value = ''
+    // categoryName.value = ''
   } catch (error) {
     console.error('添加分类失败：', error)
     alert('添加分类失败，请重试！')
@@ -535,7 +535,7 @@ const submitCategory = async () => {
 /* 成功提示框：固定底部，绿色背景，自动消失 */
 .success-toast {
   position: fixed;
-  bottom: 2rem;
+  top: 2rem;
   left: 50%;
   transform: translateX(-50%);
   padding: 0.8rem 1.5rem;
