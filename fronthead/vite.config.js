@@ -56,8 +56,6 @@ export default defineConfig({
           axios: ['axios'],
           // 拆分 Element Plus（大型 UI 库）
           'element-plus': ['element-plus'],
-          // 拆分 3D 相关库（three + vanta 体积较大）
-          three: ['three', 'vanta'],
           // 拆分 Markdown 相关库
           markdown: ['marked', 'highlight.js', 'md-editor-v3'],
         },
