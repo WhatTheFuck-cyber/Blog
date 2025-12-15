@@ -126,7 +126,7 @@ const handleSearch = (params) => {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 轻微阴影，区分内容区 */
   position: sticky; /* 粘性定位，滚动时固定在顶部 */
   top: 0; /* 粘性定位的顶部偏移量 */
-  z-index: 999; /* 高z-index，防止被其他元素遮挡 */
+  z-index: 998; /* 高z-index，防止被其他元素遮挡 */
   gap: 1rem; /* 子元素间距，防止挤压 */
 }
 
