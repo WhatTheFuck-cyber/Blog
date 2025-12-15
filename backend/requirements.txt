@@ -5,10 +5,10 @@
 #   4. 将 openssl.cnf 放入本项目的 .key 目录下
 #   5. 在创建证书时加上 -config "./.key/openssl.cnf"
 
-fastapi
-uvicorn
-sqlalchemy
-passlib
-pydantic[email]
-python-jose
-pydantic
+fastapi==0.122.0
+uvicorn==0.38.0
+sqlalchemy==2.0.44
+passlib==1.7.4
+pydantic[email]==2.12.4
+python-jose==3.5.0
+pydantic==2.12.4
