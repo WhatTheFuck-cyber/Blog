@@ -50,8 +50,16 @@ export default defineConfig({
       output: {
         // 拆分第三方依赖，避免单文件体积过大（提升首屏加载速度）
         manualChunks: {
+          // 拆分 Vue 生态核心库
           vue: ['vue', 'vue-router', 'pinia'],
-          vendor: ['axios'],
+          // 拆分 Axios
+          axios: ['axios'],
+          // 拆分 Element Plus（大型 UI 库）
+          'element-plus': ['element-plus'],
+          // 拆分 3D 相关库（three + vanta 体积较大）
+          three: ['three', 'vanta'],
+          // 拆分 Markdown 相关库
+          markdown: ['marked', 'highlight.js', 'md-editor-v3'],
         },
       },
     },
