@@ -30,6 +30,15 @@ docker-compose up -d --build
 
 # 查看日志
 docker-compose logs -f
+
+# docker历程状态查看
+docker ps
+
+# 终止docker历程
+docker-compose down
+
+# 重构dicker历程
+docker-compose build PROCESS-NAME
 ```
 
 ## 项目许可
