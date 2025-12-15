@@ -22,6 +22,16 @@
 
 - 个性化开始
 
+## 一键启动
+
+```bash
+# 构建并启动容器
+docker-compose up -d --build
+
+# 查看日志
+docker-compose logs -f
+```
+
 ## 项目许可
 
 本项目由[WhatTheFuck-cyber](https://github.com/WhatTheFuck-cyber)开发，遵循 MIT 许可证。
