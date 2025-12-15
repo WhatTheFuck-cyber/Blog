@@ -1,0 +1,24 @@
+services:
+  backend:
+    build: ./backend
+    container_name: blog_backend
+    ports:
+      - "8888:8888"
+    networks:
+      - blog_network
+    restart: unless-stopped
+
+  fronthead:
+    build: ./fronthead
+    container_name: blog_frontend
+    ports:
+      - "7777:7777"
+    depends_on:
+      - backend
+    networks:
+      - blog_network
+    restart: unless-stopped
+
+networks:
+  blog_network:
+    driver: bridge
